@@ -13,14 +13,15 @@ interface ThemeCtxProps {
   setBackground: Dispatch<SetStateAction<string>>;
 }
 
+interface ComponentProps {
+  children: React.ReactNode;
+}
+
 const ctx: ThemeCtxProps = {
   backgroundColor: "",
   setBackground: () => {},
 };
 
-interface ComponentProps {
-  children: React.ReactNode;
-}
 
 export const ThemeContext = createContext(ctx);
 export const useThemeContext = () => useContext(ThemeContext);

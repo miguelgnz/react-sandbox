@@ -40,7 +40,7 @@ export default function TodoAppPage() {
           ? { ...task, isCompleted: !task.isCompleted }
           : task;
       })
-    );
+      );
   };
 
   return (

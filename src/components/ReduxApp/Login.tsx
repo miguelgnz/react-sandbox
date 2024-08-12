@@ -1,7 +1,7 @@
 "use client";
 
 import { logIn, logOut, toggleModerator } from "@/redux/features/auth-slice";
-import { useDispatch, UseDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 import { useState } from "react";
 
